@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/cloud-sun?style=solid">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Weather Dashboard
+    </title>
+</head>
+<!-- jumbotron goes here -->
+
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <h1 class="header-title"><i class="fas fa-cloud-sun"></i>TODAYS WEATHER IS..<br></h1>
+    </header>
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+            <!-- search field and Btns go here -->
+            <div class="card">
+                <h3 class="card-header text-uppercase">Search By City</h3>
+                <form id="user-form" class="card-body">
+                    <label class="form-label"></label>
+                    <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" id="search-btn">Search</button>
+                    <div class="card-body" id="language-buttons">
+                        <button data-language="salt-lake-city " class="btn">Salt Lake City</button>
+                        <button data-language="denver" class="btn">Denver</button>
+                        <button data-language="orlando" class="btn">Orlando</button>
+                        <button data-language="san-francisco" class="btn">San Francisco</button>
+                        <button data-language="houston" class="btn">Houston</button>
+                        <button data-language="woodstock" class="btn">Woodstock</button>
+                    </div>
+                </form>
+            </div>
+            <div class="m-5 row justify-content-around">
+                <!-- todo start -->
+                <div class="col-12 col-md-6 col-xl-3 mb-3">
+                    <div class="card">
+                        <h4 class="card-header bg-dark text-light d-flex align-items-center">
+                            placeholder for weather
+                        </h4>
+                        <ul id="list-toDo" class="list-group list-group-flush">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3 mb-3">
+                    <div class="card">
+                        <h4 class="card-header bg-dark text-light d-flex align-items-center">
+                            placeholder for weather
+                        </h4>
+                        <ul id="list-inProgress" class="list-group list-group-flush">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3 mb-3">
+                    <div class="card">
+                        <h4 class="card-header bg-dark text-light d-flex align-items-center">
+                            placeholder for weather
+                        </h4>
+                        <ul id="list-inReview" class="list-group list-group-flush">
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-12 col-md-6 col-xl-3 mb-3">
+                    <div class="card">
+                        <h4 class="card-header bg-dark text-light d-flex align-items-center">
+                            placeholder for weather
+                        </h4>
+                        <ul id="list-done" class="list-group list-group-flush">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3 mb-3">
+                    <div class="card">
+                        <h4 class="card-header d-flex align-items-center">
+                            placeholder for weather
+                        </h4>
+                        <ul id="list-done" class="list-group list-group-flush">
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            >
+    </main>
+    <script src=" ./assets/css/js/homepage.js"></script>
+</body>
+
+
+
+
+
+<script
+    src="https://api.openweathermap.org/data/2.5/onecall?lat=40.64&lon=-112.02&exclude=hourly,daily&appid=6d385c1b5e0b0ca70a1427d6269e84a1"></script>
+
+</body>
+
+</html>
